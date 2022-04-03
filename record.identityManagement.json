@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.identityManagement.json",
+    "title": "Identity Management",
+    "type": "object",
+    "properties": {
+        "properties": {
+            "referenceCode": {
+                "type": "string"
+            },
+            "title": {
+                "type": "string"
+            },
+            "date": {
+                "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/date.json"
+            },
+            "levelOfDescription": {
+                "type": "string",
+                "enum": ["archive", "fonds", "series", "file", "document"]
+            },
+            "extent": {
+                "type": "string"
+            }
+        }
+    }
+}

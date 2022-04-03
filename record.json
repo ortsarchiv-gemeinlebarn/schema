@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.json",
+    "title": "Record",
+    "type": "object",
+    "required": [
+        "id",
+        "parentId",
+        "identityManagement"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "GUID of Object",
+            "format": "uuid",
+            "default": "00000000-0000-0000-0000-000000000000"
+        },
+        "parentId": {
+            "type": "string",
+            "description": "GUID of Object",
+            "format": "uuid",
+            "default": "00000000-0000-0000-0000-000000000000"
+        },
+        "children": {
+            "type": "array",
+            "default": []
+        },
+        "identityManagement": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.identityManagement.json"
+        }
+    }
+}
