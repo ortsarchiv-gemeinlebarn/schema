@@ -1,24 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
     "id": "https://schema.ortsarchiv-gemeinlebarn.org/date.json",
     "title": "Identity Management",
     "type": "object",
     "properties": {
-        "properties": {
-            "formalPeriodBegin": {
-                "type": ["null", "string"],
-                "format": "date-time",
-                "default": null
-            },
-            "formalPeriodEnd": {
-                "type": ["null", "string"],
-                "format": "date-time",
-                "default": null
-            },
-            "text": {
-                "type": "string",
-                "default": "Unbekannt"
-            }
+        "formalPeriodBegin": {
+            "type": ["null", "string"],
+            "format": "date-time",
+            "default": null
+        },
+        "formalPeriodEnd": {
+            "type": ["null", "string"],
+            "format": "date-time",
+            "default": null
+        },
+        "text": {
+            "type": "string",
+            "default": "Unbekannt"
         }
     }
 }

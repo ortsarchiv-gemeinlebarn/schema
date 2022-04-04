@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.descriptionControl.json",
+    "title": "Description Control",
+    "type": "object",
+    "required": [
+        "archivistsNote",
+        "rulesOrConventions",
+        "dateOfDescriptions"
+    ],
+    "properties": {
+        "archivistsNote": {
+            "type": ["null", "string"]
+        },
+        "rulesOrConventions": {
+            "type": ["null", "string"]
+        },
+        "dateOfDescriptions": {
+            "type": ["null", "string"]
+        }
+    }
+}

@@ -1,12 +1,17 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
     "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.json",
     "title": "Record",
     "type": "object",
     "required": [
         "id",
         "parentId",
-        "identityManagement"
+        "identityManagement",
+        "contentAndStructure",
+        "conditionsOfAccessAndUse",
+        "alliedMaterials",
+        "notes",
+        "descriptionControl"
     ],
     "properties": {
         "id": {
@@ -22,11 +27,29 @@
             "default": "00000000-0000-0000-0000-000000000000"
         },
         "children": {
-            "type": "array",
+            "type": ["null", "array"],
             "default": []
         },
         "identityManagement": {
             "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.identityManagement.json"
+        },
+        "context": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.context.json"
+        },
+        "contentAndStructure": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.contentAndStructure.json"
+        },
+        "conditionsOfAccessAndUse": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.conditionsOfAccessAndUse.json"
+        },
+        "alliedMaterials": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.alliedMaterials.json"
+        },
+        "notes": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.notes.json"
+        },
+        "descriptionControl": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/record.descriptionControl.json"
         }
     }
 }

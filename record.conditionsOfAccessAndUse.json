@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.conditionsOfAccessAndUse.json",
+    "title": "Conditions of Access and Use",
+    "type": "object",
+    "required": [
+        "conditionsGoveringAccess",
+        "conditionsGoveringReproduction",
+        "languageScriptsOfMaterial",
+        "physicalCharacteristicsAndTechnicalReuirements",
+        "findingAids"
+    ],
+    "properties": {
+        "conditionsGoveringAccess": {
+            "type": ["null", "string"]
+        },
+        "conditionsGoveringReproduction": {
+            "type": ["null", "string"]
+        },
+        "languageScriptsOfMaterial": {
+            "type": ["null", "string"]
+        },
+        "physicalCharacteristicsAndTechnicalReuirements": {
+            "type": ["null", "string"]
+        },
+        "findingAids": {
+            "type": ["null", "string"]
+        }
+    }
+}

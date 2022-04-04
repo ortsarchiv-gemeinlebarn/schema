@@ -1,26 +1,29 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
     "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.identityManagement.json",
     "title": "Identity Management",
     "type": "object",
+    "required": [
+        "id",
+        "parentId",
+        "identityManagement"
+    ],
     "properties": {
-        "properties": {
-            "referenceCode": {
-                "type": "string"
-            },
-            "title": {
-                "type": "string"
-            },
-            "date": {
-                "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/date.json"
-            },
-            "levelOfDescription": {
-                "type": "string",
-                "enum": ["archive", "fonds", "series", "file", "document"]
-            },
-            "extent": {
-                "type": "string"
-            }
+        "referenceCode": {
+            "type": ["null", "string"]
+        },
+        "title": {
+            "type": "string"
+        },
+        "date": {
+            "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/date.json"
+        },
+        "levelOfDescription": {
+            "type": ["string"],
+            "enum": ["archive", "fonds", "series", "file", "document"]
+        },
+        "extent": {
+            "type": ["null", "string"]
         }
     }
 }

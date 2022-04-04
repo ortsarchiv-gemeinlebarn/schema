@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.alliedMaterials.json",
+    "title": "Allied Materials",
+    "type": "object",
+    "required": [
+        "existenceAndLocationOfOriginals",
+        "existenceAndLocationOfCopies",
+        "relatedUnitsOfDescription",
+        "publicationNote"
+    ],
+    "properties": {
+        "existenceAndLocationOfOriginals": {
+            "type": ["null", "string"]
+        },
+        "existenceAndLocationOfCopies": {
+            "type": ["null", "string"]
+        },
+        "relatedUnitsOfDescription": {
+            "type": ["null", "string"]
+        },
+        "publicationNote": {
+            "type": ["null", "string"]
+        }
+    }
+}

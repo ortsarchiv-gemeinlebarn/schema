@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.notes.json",
+    "title": "Notes",
+    "type": "object",
+    "required": [
+        "notes"
+    ],
+    "properties": {
+        "notes": {
+            "type": "string"
+        }
+    }
+}

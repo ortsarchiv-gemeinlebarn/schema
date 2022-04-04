@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/record.context.json",
+    "title": "Context",
+    "type": "object",
+    "required": [
+        "nameOfCreators",
+        "biographicalOrBiographicalHistory",
+        "archivalHistory",
+        "immediateSourceOfAcquisitionOrTransfer"
+    ],
+    "properties": {
+        "nameOfCreators": {
+            "type": ["null", "string"]
+        },
+        "biographicalOrBiographicalHistory": {
+            "type": ["null", "string"]
+        },
+        "archivalHistory": {
+            "type": ["null", "string"]
+        },
+        "immediateSourceOfAcquisitionOrTransfer": {
+            "type": ["null", "string"]
+        }
+    }
+}
