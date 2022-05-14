@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/digitalEdition.json",
+    "title": "Digital Edition",
+    "type": "object",
+    "required": [
+        "id",
+        "recordId",
+        "type",
+        "created",
+        "genuineDigital",
+        "edited",
+        "parts"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "GUID of Object",
+            "format": "uuid",
+            "default": "00000000-0000-0000-0000-000000000000"
+        },
+        "parentId": {
+            "type": "string",
+            "description": "GUID of Parent Record",
+            "format": "uuid",
+            "default": "00000000-0000-0000-0000-000000000000"
+        },
+        "type": {
+            "type": ["string"],
+            "enum": ["image", "video", "audio"]
+        },
+        "created": {
+            "type": ["null", "string"],
+            "format": "date-time",
+            "default": null
+        },
+        "genuineDigital": {
+            "type": ["bool"],
+            "default": false
+        },
+        "edited": {
+            "type": ["bool"],
+            "default": false
+        },
+        "parts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": {
+                    "$ref": "https://schema.ortsarchiv-gemeinlebarn.org/digitalEdition.part.json"
+                }
+            },
+            "default": []
+        }
+    }
+}

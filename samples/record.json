@@ -1,0 +1,59 @@
+{
+    "$schema": "https://schema.ortsarchiv-gemeinlebarn.org/record.json",
+    "id": "08d9ee49-c1fe-4eae-8c50-1ee299df6cdf",
+    "parentId": "08d9ee41-1869-4cbf-8387-8b5ec7f91b34",
+    "children": null,
+    "identityManagement": {
+        "referenceCode": "",
+        "title": "Original",
+        "date": {
+            "formalPeriodBegin": null,
+            "formalPeriodEnd": null,
+            "text": null
+        },
+        "levelOfDescription": "item",
+        "extent": null
+    },
+    "context": {
+        "nameOfCreators": null,
+        "biographicalOrBiographicalHistory": null,
+        "archivalHistory": null,
+        "immediateSourceOfAcquisitionOrTransfer": null
+    },
+    "contentAndStructure": {
+        "scopeAndContent": null,
+        "appraisalDestructionAndSchedulingInformation": null,
+        "accruals": null,
+        "systemOfArrangement": null
+    },
+    "conditionsOfAccessAndUse": {
+        "conditionsGoveringAccess": null,
+        "conditionsGoveringReproduction": null,
+        "languageScriptsOfMaterial": null,
+        "physicalCharacteristicsAndTechnicalReuirements": null,
+        "findingAids": null
+    },
+    "alliedMaterials": {
+        "existenceAndLocationOfOriginals": null,
+        "existenceAndLocationOfCopies": null,
+        "relatedUnitsOfDescription": null,
+        "publicationNote": null
+    },
+    "notes": {
+        "note": null
+    },
+    "descriptionControl": {
+        "archivistsNote": null,
+        "rulesOrConventions": null,
+        "dateOfDescriptions": null
+    },
+    "numberOfChildren": 0,
+    "numberOfDigitalEditions": 0,
+    "apiReference": {
+        "eintragBestandId": 1,
+        "eintragId": 13,
+        "itemInternId": 887,
+        "itemExternId": null,
+        "itemDigitalId": 2
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "id": "https://schema.ortsarchiv-gemeinlebarn.org/digitalEdition.part.json",
+    "title": "Digital Edition Part",
+    "type": "object",
+    "required": [
+        "sortIndex",
+        "page",
+        "aspectRatio",
+        "resolutionX",
+        "resolutionY",
+        "width",
+        "height",
+        "fulltext"
+    ],
+    "properties": {
+        "sortIndex": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "page": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "aspectRatio": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "resolutionX": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "resolutionY": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "width": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "height": {
+            "type": ["null", "number"],
+            "default": null
+        },
+        "fulltext": {
+            "type": ["null", "string"],
+            "default": null
+        }
+    }
+}

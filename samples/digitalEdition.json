@@ -1,0 +1,21 @@
+{
+    "id": null,
+    "recordId": null,
+    "type": "image",
+    "created": null,
+    "genuineDigital": false,
+    "edited": false,
+    "apiReference": {
+        "itemDigitalId": null
+    },
+    "parts": [{
+        "sortIndex": null,
+        "page": 1,
+        "aspectRatio": null,
+        "resolutionX": null,
+        "resolutionY": null,
+        "width": null,
+        "height": null,
+        "fulltext": null
+    }]
+}
